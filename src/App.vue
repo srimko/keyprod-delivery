@@ -3,38 +3,51 @@
     <v-app-bar
       app
       color="primary"
-      dark
     >
-      <div class="d-flex align-center">
-        <v-img
-          alt="Vuetify Logo"
-          class="shrink mr-2"
-          contain
-          src="https://cdn.vuetifyjs.com/images/logos/vuetify-logo-dark.png"
-          transition="scale-transition"
-          width="40"
-        />
-
-        <v-img
-          alt="Vuetify Name"
-          class="shrink mt-1 hidden-sm-and-down"
-          contain
-          min-width="100"
-          src="https://cdn.vuetifyjs.com/images/logos/vuetify-name-dark.png"
-          width="100"
-        />
-      </div>
+      <v-img
+        alt="Keyprod Logo"
+        contain
+        src="./assets/logo-keyprod.png"
+        width="280"
+        class="mt-15"
+      />
 
       <v-spacer></v-spacer>
 
-      <v-btn
-        href="https://github.com/vuetifyjs/vuetify/releases/latest"
-        target="_blank"
+      <v-btn 
+        width="175"
+        height="100%"
         text
-      >
-        <span class="mr-2">Latest Release</span>
-        <v-icon>mdi-open-in-new</v-icon>
+        class="mr-2"
+        color="#222427"
+        >
+        <v-icon>mdi-comment-processing-outline</v-icon>
       </v-btn>
+      <v-btn 
+        width="175"
+        height="100%"
+        text
+        class="mr-2"
+        color="#222427"
+        >
+        <v-icon>mdi-cog</v-icon>
+      </v-btn>
+      <v-btn 
+        width="175"
+        height="100%"
+        text
+        class="mr-2"
+        color="#222427"
+        >
+        <v-icon>mdi-help-circle</v-icon>
+      </v-btn>
+      <AppBarProfil />
+      <AppBarTime />
+
+
+      <template v-slot:extension>
+        <AppBarDate />
+      </template>
     </v-app-bar>
 
     <v-main>
@@ -76,12 +89,21 @@
 </template>
 
 <script>
+import AppBarProfil from '@/components/AppBarProfil.vue'
+import AppBarTime from '@/components/AppBarTime.vue'
+import AppBarDate from '@/components/AppBarDate.vue'
+
 
 export default {
   name: 'App',
 
   data: () => ({
-    //
+    value: false
   }),
+  components: {
+    AppBarProfil,
+    AppBarTime,
+    AppBarDate
+  }
 };
 </script>
