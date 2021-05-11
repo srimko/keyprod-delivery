@@ -1,7 +1,10 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
+import Orders from '../views/Orders.vue'
+import VueQrcodeReader from "vue-qrcode-reader";
 
+Vue.use(VueQrcodeReader);
 Vue.use(VueRouter)
 
 const routes = [
@@ -9,6 +12,11 @@ const routes = [
     path: '/',
     name: 'Home',
     component: Home
+  },
+  {
+    path: '/Orders',
+    name: 'Orders',
+    component: Orders
   },
   {
     path: '/about',
