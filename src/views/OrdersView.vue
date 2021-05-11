@@ -1,7 +1,7 @@
 <template>
   <v-container fill-height>
     <v-row align="center" no-gutters>
-      <v-col>
+      <v-col col="12">
          <h1 class="mb-6"> <v-icon large class="mr-2">mdi-archive-arrow-down</v-icon> Orders</h1>
         <v-card>
           <v-card-title>

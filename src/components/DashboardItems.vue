@@ -7,7 +7,10 @@
             <v-row>
               <v-col 
                 v-for="menu in slide" :key="menu.id"
-                cols="6"
+                lg="6"
+                md="6"
+                sm="12"
+                xs="12"
               >
                   <v-card 
                     class="rounded-lg mx-2"
@@ -16,6 +19,7 @@
                     <v-card-title>
                       <v-row>
                         <v-col 
+                          sm="12"
                           :class="menu.title.toLowerCase()"
                         >
                           <span class="title text-uppercase">
@@ -25,7 +29,7 @@
                             {{menu.title}}
                           </span>
                         </v-col>
-                        <v-col>
+                        <v-col >
                           <span class="text-uppercase">{{menu.description}}</span>
                         </v-col>
                       </v-row>
@@ -68,11 +72,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-
-  .v-card {
-    // min-height: 550px;
-  }
-
   .v-card__title {
     background-color: #23252A;
     color: #FFFFFF;
@@ -86,7 +85,10 @@ export default {
         font-size: 1.55em !important;
       }
       &:nth-child(1) {
-        max-width: max-content;
+        max-width: inherit;
+        @media screen and (min-width: 1264px) {
+          max-width: max-content;
+        }
       }
       &:nth-child(2) {
         padding: 30px 20px;

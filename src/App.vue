@@ -106,15 +106,6 @@
 
         <v-icon>mdi-package-variant</v-icon>
       </v-btn>
-
-      <v-btn 
-        value="quality"
-        width="175"
-      >
-        <span>Quality</span>
-
-        <v-icon>mdi-check-all</v-icon>
-      </v-btn>
     </v-bottom-navigation>
   </v-app>
 </template>
