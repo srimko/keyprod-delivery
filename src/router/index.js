@@ -2,8 +2,10 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
 import OrdersView from '../views/OrdersView.vue'
+import OrderView from '../views/OrderView.vue'
 import ParcelsView from '../views/ParcelsView.vue'
 import ProductsView from '../views/ProductsView.vue'
+import ProductView from '../views/ProductView.vue'
 import VueQrcodeReader from "vue-qrcode-reader";
 
 Vue.use(VueQrcodeReader);
@@ -21,9 +23,19 @@ const routes = [
     component: OrdersView
   },
   {
+    path: '/order/:id',
+    name: 'Order',
+    component: OrderView
+  },
+  {
     path: '/products',
     name: 'Products',
     component: ProductsView
+  },
+  {
+    path: '/product/:id',
+    name: 'Product',
+    component: ProductView
   },
   {
     path: '/parcels',

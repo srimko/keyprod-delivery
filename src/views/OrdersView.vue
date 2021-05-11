@@ -2,9 +2,9 @@
   <v-container fill-height>
     <v-row align="center" no-gutters>
       <v-col>
+         <h1 class="mb-6"> <v-icon large class="mr-2">mdi-archive-arrow-down</v-icon> Orders</h1>
         <v-card>
           <v-card-title>
-            <v-icon>mdi-archive-arrow-down</v-icon> Orders
             <v-spacer></v-spacer>
             <v-text-field
               v-model="search"
@@ -72,6 +72,7 @@
                     <v-text-field
                       v-model="editedItem.order_id"
                       label="order_id"
+                      disabled
                     ></v-text-field>
                   </v-col>
                   <v-col
@@ -82,8 +83,11 @@
                     <v-text-field
                       v-model="editedItem.customer"
                       label="customer"
+                      disabled
                     ></v-text-field>
                   </v-col>
+                </v-row>
+                <v-row>
                   <v-col
                     cols="12"
                     sm="6"

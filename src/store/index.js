@@ -210,6 +210,18 @@ export default new Vuex.Store({
       }
     ],
   },
+  getters: {
+    getProductById: (state) => (serrialId) => {
+      return state.products.find(product => product.product_serial === serrialId)
+    },
+    getOrderById: (state) => (orderId) => {
+      return state.orders.find(order => order.order_id === orderId)
+    },
+    getProductsFromOrder: (state) => (orderId) => {
+      const products = state.products.filter(product => product.order_id === orderId)
+      return products
+    }
+  },
   mutations: {
   },
   actions: {
