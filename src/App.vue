@@ -6,12 +6,14 @@
       height="50"
       extension-height="18"
     >
-      <v-img
+      <router-link to="/">
+        <v-img
         alt="Keyprod Logo"
         contain
         src="./assets/logo-keyprod.png"
         class="mt-12 logo"
       />
+      </router-link>
 
       <v-spacer></v-spacer>
 
