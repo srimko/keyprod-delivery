@@ -30,7 +30,7 @@ yarn build
   --- /Parcels
 ```
 
-La navigation se fait par la barre de navigation du bas. Les 
+La navigation se fait par la barre de navigation du bas.
 
 #### **_/Home_**
 Page reprenant l'intégration d'une maquette.
@@ -39,30 +39,32 @@ Page reprenant l'intégration d'une maquette.
 Page regroupant toutes les commandes. 
 
 **Features**
-- Il est possible de consulter les commandes et leurs status. 
-- Il est possible de filtrer chaque colonne. 
-- Il est possible de chercher les commandes en fonction du nom du client graçe au champ de recherche.
-- Il est possible modifier certains champs de la commande (qty_to_pack, qty_packed, qty_package).
-- Il est possible d'ajouter un produit à un colis.
-- Il est possible de scanner un QRCode. 
+Il est possible :
+- de consulter les commandes et leurs statuts,
+- de filtrer chaque colonne,
+- de chercher les commandes en fonction du nom du client grace au champ de recherche,
+- de modifier certains champs de la commande (qty_to_pack, qty_packed, qty_package),
+- d'ajouter un produit à un colis,
+- de scanner un QRCode,
   `([A-z_0-9]*).([A-z\-0-9]*)` ex : **KeyNetic_V1_AFAAAA.KP-12346**
   Groupe 1 : Numéro de série du produit
   Groupe 2 : Numéro de la commande
-  Le script va afficher un warning si le numéro de commande lié au produit n'est pas le même que le numéro de commande sélextionner.
+  Le script va afficher un warning, si le numéro de commande lié au produit n'est pas identique au numéro de commande sélectionné.
 
 #### **_/Order/:id_**
-Pour y accéder il faut d'abord entrer dans la page `/products` et cliquer sur un des numéro de série d'un produit.
-On peut voir les quelques informations du produit.
-// TODO : Regarder pourquoi je n'ai qu'un produit dans cette page
+Pour y accéder, il faut d'abord aller sur la page `/products` et cliquer sur l'un des numéros de série.
+On peut y voir les informations des produits.
 
 #### **_/Products_**
-Liste tous les produits. On peut voir en détail les informations d'un produit en cliquant sur son numéro de série.
+La page liste tous les produits. 
+On peut voir en détail les informations d'un produit en cliquant sur son numéro de série.
 
 #### **_/Product/:id_**
-Liste toutes les informations d'un produit. On peut également aller voir la commande associé et y accéder graçe au lien.
+La page liste toutes les informations d'un produit. 
+On peut également aller voir la commande associée et y accéder grace au lien.
 
 #### **_/Parcels_**
-Liste toutes des colis. Il est possible de voir tous les produits dans associés a un colis.
+La page liste tous les colis. Il est possible de voir tous les produits associés à un colis.
 
 -----
 
