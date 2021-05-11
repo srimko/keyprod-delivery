@@ -62,17 +62,10 @@
       height="60"
     >
       <v-btn 
-        value="planning"
-        width="175"
-      >
-        <span>Planning</span>
-
-        <v-icon>mdi-calendar-text</v-icon>
-      </v-btn>
-
-      <v-btn 
         value="dashboard"
         width="175"
+        link
+        href="/"
       >
         <span>Dashboard</span>
 
@@ -82,19 +75,34 @@
       <v-btn 
         value="alert"
         width="175"
+        link
+        href="/orders"
       >
-        <span>Alert</span>
+        <span>Order</span>
 
-        <v-icon>mdi-alert</v-icon>
+        <v-icon>mdi-archive-arrow-down</v-icon>
+      </v-btn>
+
+      <v-btn 
+        value="planning"
+        width="175"
+        link
+        href="/products"
+      >
+        <span>Product</span>
+
+        <v-icon>mdi-view-list</v-icon>
       </v-btn>
 
       <v-btn 
         value="event"
         width="175"
+        link
+        href="/parcels"
       >
-        <span>Event</span>
+        <span>Parcel</span>
 
-        <v-icon>mdi-information</v-icon>
+        <v-icon>mdi-package-variant</v-icon>
       </v-btn>
 
       <v-btn 

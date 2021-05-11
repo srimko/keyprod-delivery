@@ -1,10 +1,10 @@
 <template>
-  <v-container>
-    <v-row>
+  <v-container fill-height>
+    <v-row align="center" no-gutters>
       <v-col>
         <v-card>
           <v-card-title>
-            Orders
+            <v-icon>mdi-archive-arrow-down</v-icon> Orders
             <v-spacer></v-spacer>
             <v-text-field
               v-model="search"
