@@ -1,9 +1,7 @@
 <template>
-  <v-row>
-    <v-col>
-      {{currentTime}}
-    </v-col>
-  </v-row>
+  <div class="time">
+    {{currentTime}}
+  </div>
 </template>
 
 <script>
@@ -28,5 +26,11 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-
+  .time {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    padding: 0 60px;
+    background-color: #222427;
+  }
 </style>

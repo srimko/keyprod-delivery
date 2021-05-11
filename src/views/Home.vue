@@ -1,15 +1,15 @@
 <template>
-  <hello-world />
+  <DashboardItems />
 </template>
 
 <script>
-  import HelloWorld from '../components/HelloWorld'
+import DashboardItems from '../components/DashboardItems'
 
-  export default {
-    name: 'Home',
+export default {
+  name: 'Home',
 
-    components: {
-      HelloWorld,
-    },
-  }
+  components: {
+    DashboardItems,
+  },
+}
 </script>

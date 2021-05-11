@@ -1,9 +1,7 @@
 <template>
-  <v-row>
-    <v-col class="d-flex justify-end">
-      {{currentDate}}
-    </v-col>
-  </v-row>
+  <div>
+    <p>{{currentDate}}</p>
+  </div>
 </template>
 
 <script>
@@ -19,6 +17,13 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
-
+<style lang="scss">
+  .v-toolbar__extension {
+    justify-content: flex-end;
+    p {
+      font-size: 0.8em;
+      margin: 0 !important;
+      padding-right: 30px;
+    }
+  }
 </style>
