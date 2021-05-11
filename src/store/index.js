@@ -5,6 +5,84 @@ Vue.use(Vuex)
 
 export default new Vuex.Store({
   state: {
+    dashboardMenuSlide: [
+      [
+        {
+          id: 0,
+          title: 'Production',
+          description: 'Manage your equipment organization and their tracking with customizable dashboards and stops causes',
+          icon: 'mdi-layers-triple-outline',
+          links: [
+            'Factories', 'Machines', 'Machines groups', 'Stops', 'Dashboards', 'Devices'
+          ]
+        },
+        {
+          id: 1,
+          title: 'People',
+          description: 'Manage your people organization, services, users access to keyprod and their rights',
+          icon: 'mdi-account',
+          links: [
+            'Users', 'User groups', 'Services', 'Empowerment', 'Assignments'
+          ]
+        },
+        {
+          id: 2,
+          title: 'Time',
+          description: 'Manage your time organization with opening times, shift rotations. Plan machine downtinme and get the cost center and pointing tasks',
+          icon: 'mdi-circle-slice-5',
+          links: [
+            'Factories', 'Machines', 'Machines groups', 'Stops', 'Dashboards', 'Devices'
+          ]
+        },
+        {
+          id: 3,
+          title: 'Job',
+          description: 'Access information related to the part you produce, such as customers, prders, productions orders and jobs',
+          icon: 'mdi-view-dashboard-variant',
+          links: [
+            'Clients', 'Orders', 'Products'
+          ]
+        }
+      ],
+      [
+        {
+          id: 0,
+          title: 'Production',
+          description: 'Manage your equipment organization and their tracking with customizable dashboards and stops causes',
+          icon: 'mdi-layers-triple-outline',
+          links: [
+            'Factories', 'Machines', 'Machines groups', 'Stops', 'Dashboards', 'Devices'
+          ]
+        },
+        {
+          id: 1,
+          title: 'People',
+          description: 'Manage your people organization, services, users access to keyprod and their rights',
+          icon: 'mdi-account',
+          links: [
+            'Users', 'User groups', 'Services', 'Empowerment', 'Assignments'
+          ]
+        },
+        {
+          id: 2,
+          title: 'Time',
+          description: 'Manage your time organization with opening times, shift rotations. Plan machine downtinme and get the cost center and pointing tasks',
+          icon: 'mdi-circle-slice-5',
+          links: [
+            'Factories', 'Machines', 'Machines groups', 'Stops', 'Dashboards', 'Devices'
+          ]
+        },
+        {
+          id: 3,
+          title: 'Job',
+          description: 'Access information related to the part you produce, such as customers, prders, productions orders and jobs',
+          icon: 'mdi-view-dashboard-variant',
+          links: [
+            'Clients', 'Orders', 'Products'
+          ]
+        }
+      ]
+    ],
     orders: [
       {
         order_status: { label: 'Livré', 'color': 'green', 'text_color': 'white' },
