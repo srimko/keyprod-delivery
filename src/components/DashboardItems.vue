@@ -1,5 +1,5 @@
 <template>
-  <v-container>
+  <v-container fill-height>
     <v-row>
       <v-col cols="12">
         <carousel :perPage="1">
