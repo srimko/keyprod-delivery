@@ -187,6 +187,7 @@ export default new Vuex.Store({
       {
         parcel_id: 'PCL-19826639',
         order_id: 'KP-12345',
+        status: 'Livraison',
         deliveryIndicator: 'KCIZJNCU72JD82JKD9',
         weight: '2000', // Calculer en fonction des produits
         products: [
@@ -206,6 +207,31 @@ export default new Vuex.Store({
             product_package: 0,
             weight: '1000'
           },
+        ]
+      },
+      {
+        parcel_id: 'PCL-19823939',
+        order_id: 'KP-12346',
+        status: 'Livraison',
+        deliveryIndicator: 'ECIZJLDF72JDOENCLD',
+        weight: '2000', // Calculer en fonction des produits
+        products: [
+          {
+            order_id: 'KP-12346',
+            product_state: true,
+            product_name: 'KeyNetic',
+            product_serial: 'KeyNetic_V1_AFAAAA',
+            product_package: 0,
+            weight: '1500'
+          },
+          {
+            order_id: 'KP-12346',
+            product_state: false,
+            product_name: 'KeyNetic',
+            product_serial: null,
+            product_package: null,
+            weight: '1000'
+          }
         ]
       }
     ],
