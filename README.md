@@ -14,7 +14,6 @@ yarn serve
 ```
 yarn build
 ```
-```
 
 ## Présentation
 
@@ -83,7 +82,7 @@ Liste toutes des colis. Il est possible de voir tous les produits dans associés
 **Je veux** pouvoir accéder à une commande pour connaitre la liste des produits préparés et/ou à préparer
 **Afin de savoir** où j’en suis dans ma préparation de commande, mais aussi pour être certain de ne rien oublier et ne pas me tromper dans ce que je prépare pour mes clients
 
-Voir page /orders
+-> Voir page /orders
 
 ##### 3 - Affectation de produit
 
@@ -95,7 +94,7 @@ KeyNetic ou KeyVibe
 V1, V2, V3...
 AAAAAA > Caractère unique par produit/version
  
-Voir page /orders
+-> Voir page /orders
 
 ##### 4 - Découpage de l'expédition
 
@@ -103,7 +102,7 @@ Voir page /orders
 **Je veux** pouvoir grouper mes produits préparés sous forme de colis
 Afin de pouvoir expédier ma commande en plusieurs fois et pour y assurer un suivi de livraison distinct
 
-Voir page /orders
+-> Voir page /orders
 
 ##### 5 - Gestion du poids des colis
 
@@ -117,4 +116,4 @@ Afin d'affecter mon produit à un colis choisi pour optimiser et répartir la ch
 **Je veux** pouvoir saisir le numéro de suivi/tracking de mes paquets au moment (ou après) l'expédition
 Afin de me permettre de suivre mes colis plus tard
 
-Voir page /parcels
+-> Voir page /parcels
