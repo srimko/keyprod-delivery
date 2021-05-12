@@ -42,6 +42,7 @@ Page regroupant toutes les commandes.
 Il est possible :
 - de consulter les commandes et leurs statuts,
 - de filtrer chaque colonne,
+- de supprimer une commande
 - de chercher les commandes en fonction du nom du client grace au champ de recherche,
 - de modifier certains champs de la commande (qty_to_pack, qty_packed, qty_package),
 - d'ajouter un produit à un colis,
@@ -50,6 +51,9 @@ Il est possible :
   Groupe 1 : Numéro de série du produit
   Groupe 2 : Numéro de la commande
   Le script va afficher un warning, si le numéro de commande lié au produit n'est pas identique au numéro de commande sélectionné.
+  (Affiché l'image sur votre téléphone et le montrer à la webcam): 
+  ![Exemple QRCode](https://alexandre-cedrick.fr/drill/qrcode.jpg "KeyNetic_V1_AFAAAA.KP-12346")
+
 
 #### **_/Order/:id_**
 Pour y accéder, il faut d'abord aller sur la page `/products` et cliquer sur l'un des numéros de série.
@@ -67,6 +71,22 @@ On peut également aller voir la commande associée et y accéder grace au lien.
 La page liste tous les colis. Il est possible de voir tous les produits associés à un colis.
 
 -----
+
+# Améliorations
+
+#### /Orders
+
+- Modifier le statut de la commande en fonction du statut des produits
+- Ajouter un bouton permettant d'ajouter une commande et la liste des produits associés
+
+#### /Product
+
+-  Afficher le QRcode du produit
+#### /Parcel
+
+-  Saisir le numéro de suivi et suivre le colis
+
+_____ 
 
 # User Stories
 

@@ -1,7 +1,7 @@
 <template>
-  <v-container>
-    <v-row>
-      <v-col>
+  <v-container fill-height>
+    <v-row align="center" justify="center">
+      <v-col cols="8">
         <h1 class="mb-6"> <v-icon large class="mr-2">mdi-package-variant</v-icon>Parcel </h1>
 
         <v-simple-table>
@@ -44,8 +44,8 @@
       </v-col>
     </v-row>
 
-    <v-row v-if="parcelTemp !== null">
-      <v-col>
+    <v-row v-if="parcelTemp !== null" align="center" justify="center">
+      <v-col cols="8">
         <v-card>
           <v-card-title>{{parcelTemp.parcel_id}}</v-card-title>
           <v-card-text>
@@ -68,7 +68,7 @@
                 <v-text-field
                   label="weight"
                   disabled
-                  v-model="parcelTemp.weight"
+                  v-model="weight"
                 ></v-text-field>
               </v-col>
             </v-row>
@@ -88,6 +88,9 @@
                         <th class="text-left">
                           State
                         </th>
+                        <th class="text-left">
+                          Weight
+                        </th>
                       </tr>
                     </thead>
                     <tbody>
@@ -98,6 +101,7 @@
                         <td>{{ product.product_name }}</td>
                         <td>{{ product.product_serial }}</td>
                         <td>{{ product.product_state }}</td>
+                        <td>{{ product.weight }}</td>
                       </tr>
                     </tbody>
                   </template>
@@ -123,6 +127,13 @@ export default {
   computed: {
     parcels () {
       return this.$store.state.parcels
+    },
+    weight () {
+      let weight = 0
+      this.parcelTemp.products.map(product => {
+        weight += parseInt(product.weight)
+      })
+      return `${weight}g`
     },
     
   },

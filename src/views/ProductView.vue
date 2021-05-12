@@ -55,7 +55,6 @@ export default {
       return this.$store.getters.getProductById(productSerial)
     },
     order () {
-      console.log(this.product.order_id)
       return this.$store.getters.getOrderById(this.product.order_id)
     },
     orderLink () {

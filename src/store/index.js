@@ -132,7 +132,7 @@ export default new Vuex.Store({
         product_name: 'KeyNetic',
         product_serial: 'KeyNetic_V1_ABAAAA',
         product_package: 0,
-        weight: '1000'
+        weight: '134'
       },
       {
         order_id: 'KP-12345',
@@ -140,7 +140,7 @@ export default new Vuex.Store({
         product_name: 'KeyNetic',
         product_serial: 'KeyNetic_V1_ACAAAA',
         product_package: 0,
-        weight: '1000'
+        weight: '123'
       },
       {
         order_id: 'KP-12345',
@@ -148,7 +148,7 @@ export default new Vuex.Store({
         product_name: 'KeyNetic',
         product_serial: 'KeyNetic_V1_ADAAAA',
         product_package: 0,
-        weight: '1000'
+        weight: '123'
       },
       {
         order_id: 'KP-12345',
@@ -156,7 +156,7 @@ export default new Vuex.Store({
         product_name: 'KeyNetic',
         product_serial: null,
         product_package: null,
-        weight: '1000'
+        weight: '192'
       },
       {
         order_id: 'KP-12346',
@@ -164,7 +164,7 @@ export default new Vuex.Store({
         product_name: 'KeyNetic',
         product_serial: 'KeyNetic_V1_AEAAAA',
         product_package: 0,
-        weight: '1000'
+        weight: '201'
       },
       {
         order_id: 'KP-12346',
@@ -172,7 +172,7 @@ export default new Vuex.Store({
         product_name: 'KeyNetic',
         product_serial: 'KeyNetic_V1_AFAAAA',
         product_package: 0,
-        weight: '1000'
+        weight: '301'
       },
       {
         order_id: 'KP-12346',
@@ -180,7 +180,7 @@ export default new Vuex.Store({
         product_name: 'KeyNetic',
         product_serial: null,
         product_package: null,
-        weight: '1000'
+        weight: '384'
       }
     ],
     parcels: [
@@ -197,7 +197,7 @@ export default new Vuex.Store({
             product_name: 'KeyNetic',
             product_serial: 'KeyNetic_V1_ABAAAA',
             product_package: 0,
-            weight: '1000'
+            weight: '134'
           },
           {
             order_id: 'KP-12345',
@@ -205,7 +205,7 @@ export default new Vuex.Store({
             product_name: 'KeyNetic',
             product_serial: 'KeyNetic_V1_ACAAAA',
             product_package: 0,
-            weight: '1000'
+            weight: '123'
           },
         ]
       },
@@ -222,7 +222,7 @@ export default new Vuex.Store({
             product_name: 'KeyNetic',
             product_serial: 'KeyNetic_V1_AFAAAA',
             product_package: 0,
-            weight: '1500'
+            weight: '201'
           },
           {
             order_id: 'KP-12346',
@@ -230,7 +230,7 @@ export default new Vuex.Store({
             product_name: 'KeyNetic',
             product_serial: null,
             product_package: null,
-            weight: '1000'
+            weight: '301'
           }
         ]
       }
@@ -249,8 +249,18 @@ export default new Vuex.Store({
     }
   },
   mutations: {
+    deleteOrder(state, index) {
+      let orders = state.orders
+      orders = orders.filter((item, idx) => {
+        return idx !== index
+      })
+      state.orders = orders
+    },
   },
   actions: {
+    async deleteOrder({ commit }, {index}) {
+      commit('deleteOrder', index)
+    }
   },
   modules: {
   }

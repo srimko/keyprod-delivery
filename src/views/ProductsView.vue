@@ -1,7 +1,7 @@
 <template>
   <v-container fill-height>
-    <v-row>
-      <v-col>
+    <v-row align="center" justify="center">
+      <v-col cols="8">
         <h1 class="mb-6"> <v-icon large class="mr-2">mdi-view-list</v-icon>Products </h1>
 
         <v-simple-table>
@@ -20,6 +20,7 @@
                 <th class="text-left">
                   Order id
                 </th>
+                <th>weight</th>
               </tr>
             </thead>
 
@@ -33,6 +34,7 @@
                   <a :href="productLink(product.product_serial)">{{product.product_serial}}</a></td>
                 <td>{{ product.product_state }}</td>
                 <td>{{ product.order_id }}</td>
+                <td>{{product.weight}}g</td>
               </tr>
             </tbody>
           </template>
